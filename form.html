@@ -1,0 +1,53 @@
+<form action="/" method="POST">
+    <h1>Форма для заполнения</h1>
+        <label>
+            Фамилия Имя Отчество:<br>
+            <input name="field-FIO" placeholder="Введите ФИО" type="text" pattern="^[А-Яа-яЁё\-]+\s+[А-Яа-яЁё\-]+(?:\s+[А-Яа-яЁё\-]+)?$" required>
+        </label><br>
+        <label>
+            Мобильный телефон:<br>
+            <input name="field-telephone" type="tel" placeholder="Введите ваш номер" pattern="\+7[0-9]{10}" required>
+        </label><br>
+        <label>
+            Текстовое поле email:<br>
+            <input name="field-email" type="email" placeholder="Введите вашу почту">
+        </label><br>
+        <label>
+            Дата рождения:<br>
+            <input name="field-date" value="2007-06-15" type="date">
+        </label><br>
+        Пол:<br>
+        <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+            Мужской</label>
+        <label><input type="radio" name="radio-group-1" value="Значение2">
+            Женский</label><br>
+        <label>
+        <label>
+        Любимый язык программирования:
+        <br>
+        <select name="field-name-4[]" multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2" selected="selected">C</option>
+          <option value="Значение3" selected="selected">C++</option>
+          <option value="Значение4" selected="selected">JavaScript</option>
+          <option value="Значение5" selected="selected">PHP</option>
+          <option value="Значение6" selected="selected">Python</option>
+          <option value="Значение7" selected="selected">Java</option>
+          <option value="Значение8" selected="selected">Haskel</option>
+          <option value="Значение9" selected="selected">Clojure</option>
+          <option value="Значение10" selected="selected">Prolog</option>
+          <option value="Значение11" selected="selected">Scala</option>
+        </select>
+      </label><br>
+
+        Биография:<br>
+        <textarea name="field-name-2" required>начальное значение</textarea>
+      </label>
+      <br>     
+
+      С контрактом ознакомлен:<br>
+      <label><input type="checkbox" checked="checked" name="check-1">
+        Естественно</label><br>
+        <br>
+      <input type="submit" value="Сохранить">
+    </form>
