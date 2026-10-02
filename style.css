@@ -1,6 +1,9 @@
 body {
     margin: 0;
     background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #top {
@@ -47,6 +50,7 @@ header h1 {
 main {
     display: flex;
     flex-direction: column;
+    flex: 1;
     margin-left: 10px;
 }
 
@@ -64,11 +68,28 @@ main a {
 
 table {
     border-collapse: collapse;
-    border: 1px solid black;
+    width: 90%;
+    border: 1px solid #e31313;
+    font-size: 16px;
+    text-align: center;
 }
 
 th, td {
-    border: 1px solid black;
+    border: 1px solid #e31313;
+    padding: 10px 15px;
+}
+
+th {
+    background-color: #e31313;
+    color: #ffffff;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+tr:last-child td {
+    background-color: #fdecec;
 }
 
 footer {
@@ -82,11 +103,12 @@ footer {
 
 footer p {
     color: #ffffff;
+    margin-top: 16px;
+    margin-bottom: 0;
 }
 
 
 @media (min-width: 768px) {
-
 
     #top {
         flex-direction: row;
