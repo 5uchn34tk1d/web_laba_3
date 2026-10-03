@@ -138,3 +138,15 @@ footer p {
         order: 0;
     }
 }
+
+@media (max-width: 767px) {
+
+    table {
+        width: 100%;
+    }
+
+    #list img {
+        width: 100%;
+        height: auto;
+    }
+}
